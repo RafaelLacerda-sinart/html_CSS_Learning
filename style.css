@@ -1,0 +1,152 @@
+/* RESET BÁSICO
+   Remove espaçamentos padrão do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Faz padding e border não aumentarem o tamanho final */
+}
+
+
+
+/* ESTILO GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    /* Define fonte */
+    background-color: #f4f4f4;
+    /* Cor de fundo */
+    color: #333;
+    /* Cor padrão do texto */
+}
+
+
+
+/* SELETOR POR ID (#)
+   Só pode existir um por página */
+#topo {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    /* Espaço interno */
+}
+
+
+
+/* SELETOR POR CLASSE (.)
+   Pode ser reutilizado várias vezes */
+.subtitulo {
+    font-size: 18px;
+    opacity: 0.8;
+    /* Transparência */
+}
+
+
+
+/* FLEXBOX
+   Usado para alinhar elementos */
+.container {
+    display: flex;
+    /* Ativa flexbox */
+    justify-content: center;
+    /* Centraliza horizontal */
+    align-items: center;
+    /* Centraliza vertical */
+    gap: 20px;
+    /* Espaço entre os elementos */
+    padding: 40px;
+    flex-wrap: wrap;
+    /* Permite quebrar linha */
+}
+
+
+
+/* CARD (BOX MODEL) */
+.card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    /* Espaço interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    text-align: center;
+
+    transition: 0.3s;
+    /* Efeito suave ao mudar algo (hover) */
+}
+
+
+
+/* PSEUDO-CLASSE :hover
+   Quando o mouse passa por cima */
+.card:hover {
+    transform: translateY(-10px);
+    /* Sobe o card */
+}
+
+
+
+/* MÚLTIPLAS CLASSES */
+.destaque {
+    border: 2px solid #007bff;
+}
+
+
+
+/* ESTILO DE TEXTO */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+/* BOTÃO */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Muda o cursor */
+    transition: 0.3s;
+}
+
+/* Hover no botão */
+button:hover {
+    background: #0056b3;
+}
+
+
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+
+/* RESPONSIVIDADE Media Query */
+@media (max-width: 768px) {
+
+    body {
+        background: #e0e0e0;
+    }
+
+    .container {
+        flex-direction: column;
+        /* Em telas pequenas, empilha os cards */
+    }
+
+}
