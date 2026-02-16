@@ -162,166 +162,162 @@ Este guia contém apenas as **tags e atributos mais utilizados no desenvolviment
 
 # 📌 1. Fundamentos do CSS
 
-| Conceito | Função |
-|-----------|--------|
-| Cascata | Define qual regra vence em caso de conflito |
-| Especificidade | Determina prioridade entre seletores |
-| Box Model | Controla tamanho e espaçamento dos elementos |
-| Herança | Permite que propriedades sejam herdadas |
+| Conceito | Função | Exemplo |
+|-----------|--------|----------|
+| Cascata | A última regra pode sobrescrever a anterior | `p { color: blue; } p { color: red; }` |
+| Especificidade | Seletores mais específicos têm prioridade | `#id { color: red; }` |
+| Box Model | Controla tamanho e espaçamento | `div { margin: 10px; }` |
+| Herança | Elementos filhos herdam propriedades | `body { color: gray; }` |
 
 ---
 
 # 📌 2. Seletores Mais Utilizados
 
-| Tipo | Exemplo | Uso |
-|------|----------|------|
-| Classe | `.container` | Organização principal do CSS |
-| ID | `#header` | Elemento único |
-| Descendente | `div p` | Seleciona elementos dentro de outro |
-| Filho direto | `div > p` | Apenas filhos imediatos |
-| Pseudo-classe | `:hover` | Estados do elemento |
-| Tag | `p` | Seleção direta por elemento |
+| Tipo | Exemplo CSS | Uso |
+|------|--------------|------|
+| Classe | `.box {}` | Organização principal |
+| ID | `#menu {}` | Elemento único |
+| Descendente | `div p {}` | Seleciona `p` dentro de `div` |
+| Filho direto | `div > p {}` | Apenas filhos imediatos |
+| Pseudo-classe | `a:hover {}` | Estado do elemento |
+| Tag | `p {}` | Seleção direta |
 
 ---
 
 # 📌 3. Box Model
 
-| Propriedade | Função |
-|-------------|--------|
-| width / height | Define dimensões |
-| padding | Espaço interno |
-| border | Borda do elemento |
-| margin | Espaço externo |
-| box-sizing | Controla cálculo do tamanho |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| width | Largura | `width: 200px;` |
+| height | Altura | `height: 100px;` |
+| padding | Espaço interno | `padding: 20px;` |
+| border | Borda | `border: 1px solid black;` |
+| margin | Espaço externo | `margin: 10px;` |
+| box-sizing | Cálculo do tamanho | `box-sizing: border-box;` |
 
 ---
 
-# 📌 4. Layout (Estrutura)
+# 📌 4. Layout
 
-| Propriedade | Função |
-|-------------|--------|
-| display | Define tipo de layout |
-| position | Controle de posicionamento |
-| width / height | Dimensões |
-| margin | Espaçamento externo |
-| padding | Espaçamento interno |
-| overflow | Controla excesso de conteúdo |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| display | Tipo de layout | `display: flex;` |
+| position | Tipo de posicionamento | `position: relative;` |
+| overflow | Controle de excesso | `overflow: hidden;` |
 
 ---
 
-# 📌 5. Display Mais Importantes
+# 📌 5. Display
 
-| Tipo | Função |
-|------|--------|
-| block | Ocupa linha inteira |
-| inline | Apenas conteúdo |
-| flex | Layout flexível |
-| grid | Layout em grade |
-| none | Remove da renderização |
-
----
-
-# 📌 6. Flexbox (Essencial)
-
-| Propriedade | Função |
-|-------------|--------|
-| display: flex | Ativa o Flexbox |
-| justify-content | Alinhamento horizontal |
-| align-items | Alinhamento vertical |
-| flex-direction | Linha ou coluna |
-| gap | Espaço entre itens |
-| flex-wrap | Quebra de linha |
+| Tipo | Função | Exemplo |
+|------|--------|----------|
+| block | Ocupa linha inteira | `display: block;` |
+| inline | Apenas conteúdo | `display: inline;` |
+| flex | Layout flexível | `display: flex;` |
+| grid | Layout em grade | `display: grid;` |
+| none | Remove elemento | `display: none;` |
 
 ---
 
-# 📌 7. Grid (Estrutura Avançada)
+# 📌 6. Flexbox
 
-| Propriedade | Função |
-|-------------|--------|
-| display: grid | Ativa o Grid |
-| grid-template-columns | Define colunas |
-| grid-template-rows | Define linhas |
-| gap | Espaçamento entre células |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| justify-content | Alinha horizontalmente | `justify-content: center;` |
+| align-items | Alinha verticalmente | `align-items: center;` |
+| flex-direction | Linha ou coluna | `flex-direction: column;` |
+| gap | Espaço entre itens | `gap: 10px;` |
+| flex-wrap | Quebra linha | `flex-wrap: wrap;` |
+
+---
+
+# 📌 7. Grid
+
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| grid-template-columns | Define colunas | `grid-template-columns: 1fr 1fr;` |
+| grid-template-rows | Define linhas | `grid-template-rows: auto;` |
+| gap | Espaçamento | `gap: 20px;` |
 
 ---
 
 # 📌 8. Tipografia
 
-| Propriedade | Função |
-|-------------|--------|
-| font-size | Tamanho da fonte |
-| font-family | Tipo da fonte |
-| font-weight | Peso da fonte |
-| line-height | Altura da linha |
-| text-align | Alinhamento do texto |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| font-size | Tamanho da fonte | `font-size: 16px;` |
+| font-family | Tipo da fonte | `font-family: Arial;` |
+| font-weight | Peso da fonte | `font-weight: bold;` |
+| line-height | Altura da linha | `line-height: 1.5;` |
+| text-align | Alinhamento | `text-align: center;` |
 
 ---
 
 # 📌 9. Cores e Aparência
 
-| Propriedade | Função |
-|-------------|--------|
-| color | Cor do texto |
-| background | Fundo |
-| border | Borda |
-| border-radius | Arredondamento |
-| box-shadow | Sombra |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| color | Cor do texto | `color: red;` |
+| background | Fundo | `background: #f5f5f5;` |
+| border-radius | Arredondamento | `border-radius: 8px;` |
+| box-shadow | Sombra | `box-shadow: 0 4px 8px #0003;` |
 
 ---
 
-# 📌 10. Unidades Mais Usadas
+# 📌 10. Unidades
 
-| Unidade | Tipo |
-|----------|------|
-| px | Fixa |
-| % | Relativa ao elemento pai |
-| rem | Relativa ao root |
-| vw | Relativa à largura da tela |
+| Unidade | Tipo | Exemplo |
+|----------|------|----------|
+| px | Fixa | `width: 200px;` |
+| % | Relativa ao pai | `width: 50%;` |
+| rem | Relativa ao root | `font-size: 1.5rem;` |
+| vw | Relativa à tela | `width: 100vw;` |
 
 ---
 
-# 📌 11. Pseudo-classes Essenciais
+# 📌 11. Pseudo-classes
 
-| Pseudo-classe | Uso |
-|---------------|------|
-| :hover | Interação com mouse |
-| :focus | Elemento ativo |
-| :active | Clique |
-| :nth-child() | Seleção específica |
+| Pseudo-classe | Uso | Exemplo |
+|---------------|------|----------|
+| :hover | Interação com mouse | `button:hover {}` |
+| :focus | Elemento ativo | `input:focus {}` |
+| :active | Clique | `a:active {}` |
+| :nth-child() | Seleção específica | `li:nth-child(2) {}` |
 
 ---
 
 # 📌 12. Responsividade
 
-| Recurso | Função |
-|----------|--------|
-| Media Queries | Regras por tamanho de tela |
-| Flexbox | Ajuste automático |
-| Grid | Estrutura adaptável |
-| Mobile First | Estratégia responsiva |
+| Recurso | Função | Exemplo |
+|----------|--------|----------|
+| Media Query | Regras por tela | `@media (max-width: 768px) {}` |
+| Mobile First | Começa pelo mobile | `min-width` |
+| Flexbox | Layout adaptável | `display: flex;` |
 
 ---
 
-# 📌 13. Animações Básicas
+# 📌 13. Animações
 
-| Propriedade | Função |
-|-------------|--------|
-| transition | Transições suaves |
-| transform | Movimentos e escala |
-| animation | Animações |
+| Propriedade | Função | Exemplo |
+|-------------|--------|----------|
+| transition | Transição suave | `transition: 0.3s;` |
+| transform | Movimento/escala | `transform: scale(1.1);` |
+| animation | Animação | `animation: fade 1s;` |
 
 ---
 
 # 📌 14. Position
 
-| Tipo | Função |
-|------|--------|
-| relative | Base para posicionamento |
-| absolute | Posicionamento livre |
-| fixed | Fixo na tela |
-| sticky | Fixo condicional |
+| Tipo | Função | Exemplo |
+|------|--------|----------|
+| relative | Base para posicionamento | `position: relative;` |
+| absolute | Posicionamento livre | `position: absolute;` |
+| fixed | Fixo na tela | `position: fixed;` |
+| sticky | Fixo condicional | `position: sticky;` |
 
 ---
+
+📎 Guia focado no essencial para projetos reais.
 
 
 
