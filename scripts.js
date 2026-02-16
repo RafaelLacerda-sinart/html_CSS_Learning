@@ -5,9 +5,7 @@
 // Espera o HTML carregar completamente antes de executar o JS
 document.addEventListener("DOMContentLoaded", function () {
 
-    // ---------------------------------------
     // 1️⃣ Selecionando todos os botões da página
-    // ---------------------------------------
 
     // querySelectorAll pega TODOS os elementos que combinam com o seletor
     // Aqui estamos pegando todos os botões que estão dentro da classe .card
@@ -23,16 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Adiciona um evento de clique para cada botão
         botao.addEventListener("click", function () {
 
-            // ---------------------------------------
             // 3️⃣ Ação ao clicar no botão
-            // ---------------------------------------
 
             // Mostra um alerta diferente para cada card
             alert("Você clicou no Card " + (index + 1));
 
-            // ---------------------------------------
             // 4️⃣ Redirecionamento
-            // ---------------------------------------
 
             // Se for o primeiro botão (Card 1)
             if (index === 0) {
@@ -45,10 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // ---------------------------------------
     // 5️⃣ Alterando o título via DOM
-    // ---------------------------------------
-
+    
     // Seleciona o título principal pelo ID
     const topo = document.getElementById("topo");
 
