@@ -316,8 +316,3 @@ Este guia contém apenas as **tags e atributos mais utilizados no desenvolviment
 | sticky | Fixo condicional | `position: sticky;` |
 
 ---
-
-📎 Guia focado no essencial para projetos reais.
-
-
-
